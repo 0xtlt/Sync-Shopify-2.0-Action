@@ -1,0 +1,16 @@
+# action.yml
+name: 'Sync Shopify 2.0'
+description: 'Greet someone and record the time'
+inputs:
+  stores:
+    description: 'List of stores'
+    required: true
+  theme-dir:
+    description: 'Path to theme directory'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.stores }}
+    - ${{ inputs.theme-dir }}
