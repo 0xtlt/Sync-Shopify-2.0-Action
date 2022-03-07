@@ -13,7 +13,7 @@ This action syncs theme files from the repository to the Shopify store(s).
 
 ## Example usage
 
-uses: 0xtlt/Sync-Shopify-2.0-Action@v0.1.1
+uses: 0xtlt/Sync-Shopify-2.0-Action@v0.1.2
 with:
   stores: 'mystore.myshopify.com=myapppassword:123456789'
   theme-dir: './theme'
